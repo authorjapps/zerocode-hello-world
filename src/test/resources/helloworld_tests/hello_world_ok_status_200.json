@@ -2,7 +2,7 @@
     "scenarioName": "GIVEN- the REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body",
     "steps": [
         {
-            "name": "get_user_details",
+            "name": "get_emp_details",
             "url": "/api/v1/google-uk/employees/999",
             "operation": "GET",
             "request": {
@@ -11,7 +11,8 @@
                 "status": 200,
                 "body": {
                     "id": 999,
-                    "name": "Larry P"
+                    "name": "Larry P",
+                    "fullTime" : true
                 }
             }
         }

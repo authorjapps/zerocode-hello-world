@@ -3,14 +3,14 @@
     "steps": [
         {
             "name": "get_user_details",
-            "url": "/api/v1/google-uk/employees/1000",
+            "url": "/api/v1/google-uk/employees/UK1001",
             "operation": "GET",
             "request": {
             },
             "assertions": {
                 "status": 200,
                 "body": {
-                    "id": 1000
+                    "id": "UK1001"
                 }
             }
         }

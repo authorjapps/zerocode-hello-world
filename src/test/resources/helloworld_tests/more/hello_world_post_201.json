@@ -23,7 +23,17 @@
             "assertions": {
                 "status": 201,
                 "body": {
-                    "id": 1000
+                    "id": 1000,
+                    "name": "Larry Pg",
+                    "fullTime": true,
+                    "addresses": [
+                        {
+                            "gpsLocation": "x9000-y9000z-9000-home"
+                        },
+                        {
+                            "gpsLocation": "x9000-y9000z-9000-home-off"
+                        }
+                    ]
                 }
             }
         }
