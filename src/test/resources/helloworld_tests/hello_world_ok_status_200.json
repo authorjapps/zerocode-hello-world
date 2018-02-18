@@ -11,8 +11,7 @@
                 "status": 200,
                 "body": {
                     "id": 999,
-                    "name": "Larry P",
-                    "fullTime" : true
+                    "name": "Larry P"
                 }
             }
         }
