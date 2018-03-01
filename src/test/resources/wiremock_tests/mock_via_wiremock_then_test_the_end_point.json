@@ -1,0 +1,45 @@
+{
+    "scenarioName": "Will Mock an End Point and Test the end point using Zerocode",
+    "steps": [
+        {
+            "name": "setup_mocks",
+            "url": "/$MOCK",
+            "operation": "$USE.WIREMOCK",
+            "request": {
+                "mocks": [
+                    {
+                        "name": "GET- mock a customer response",
+                        "operation": "GET",
+                        "url": "/api/v1/amazon/customers/UK001",
+                        "response": {
+                            "status": 200,
+                            "headers": {
+                                "Accept": "application/json"
+                            },
+                            "body": {
+                                "id": "UK001",
+                                "name": "Adam Smith",
+                                "Age": "33"
+                            }
+                        }
+                    }
+                ]
+            },
+            "assertions": {
+                "status": 200
+            }
+        },
+        {
+            "name": "actual_test_verify_get_customer",
+            "url": "/api/v1/amazon/customers/UK001",
+            "operation": "GET",
+            "request": {
+                "body": {
+                }
+            },
+            "assertions": {
+                "status": 200
+            }
+        }
+    ]
+}
