@@ -1,0 +1,22 @@
+{
+    "scenarioName": "GitHub Version-Details REST API will GET, version, server details and more",
+    "steps": [
+        {
+            "name": "get_github_server_details",
+            "url": "/users/albertosipov",
+            //"url": "https://api.github.com/users/octocat/orgs", // Also ok to type the full url here
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+                    "login" : "albertosipov",
+                    "id" : 36400587,
+                    "followers_url" : "https://api.github.com/users/albertosipov/followers"
+                    //and more assertions can go here...
+                }
+            }
+        }
+    ]
+}

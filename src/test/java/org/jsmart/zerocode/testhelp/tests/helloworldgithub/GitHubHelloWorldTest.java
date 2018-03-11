@@ -1,4 +1,4 @@
-package org.jsmart.zerocode.testhelp.tests.helloworld;
+package org.jsmart.zerocode.testhelp.tests.helloworldgithub;
 
 import org.jsmart.zerocode.core.domain.JsonTestCase;
 import org.jsmart.zerocode.core.domain.TargetEnv;
@@ -8,12 +8,11 @@ import org.junit.runner.RunWith;
 
 @TargetEnv("github_host.properties")
 @RunWith(ZeroCodeUnitRunner.class)
-public class JustHelloWorldTest {
-
+public class GitHubHelloWorldTest {
 
     @Test
-    @JsonTestCase("helloworld/hello_world_status_ok_assertions.json")
-    public void testGet() throws Exception {
+    @JsonTestCase("helloworld_github_REST_api/GitHub_REST_api_sample_assertions.json")
+    public void testGitGubSample_RESTApi() throws Exception {
 
     }
 
