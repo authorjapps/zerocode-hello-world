@@ -1,0 +1,20 @@
+{
+    "scenarioName": "GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body",
+    "steps": [
+        {
+            "name": "get_user_details",
+            "url": "/users/albertosipov",
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+                    "login" : "albertosipov",
+                    "id" : 36400587,
+                    "followers_url" : "https://api.github.com/users/albertosipov/followers"
+                }
+            }
+        }
+    ]
+}
