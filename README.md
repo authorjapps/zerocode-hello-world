@@ -44,17 +44,21 @@ More examples:
 ```
 -done-
 
-Eclipse:
-=====
-Open a matching java file -> Ctrl + Shift + R
-Open a matching JSON file -> Ctrl + Shift + R
-To navigate to file -> Ctrl + Click
+References:
 
-IntelliJ:
+Eclipse(General key-board shotcuts):
 =====
-Open a matching java file -> Ctrl + n
-Open a matching JSON or XML file -> Ctrl + Shift + n
-To navigate to file -> Ctrl + Click
+For quick reference only- See more eclipse keys https://www.linkedin.com/pulse/top-30-eclipse-keyboard-shortcuts-java-programmer-jayveersinh-solanki/
+1. Open a matching java file -> Ctrl + Shift + R
+1. Open a matching JSON file -> Ctrl + Shift + R
+1. To navigate to file -> Ctrl + Click
+
+IntelliJ(General key-board shotcuts):
+=====
+More keys: https://www.jetbrains.com/help/idea/mastering-intellij-idea-keyboard-shortcuts.html
+1. Open a matching java file -> Ctrl + n
+1. Open a matching JSON or XML file -> Ctrl + Shift + n
+1. To navigate to file -> Ctrl + Click
 
 Now see the
 * Results @ `target/zerocode-test-reports`
