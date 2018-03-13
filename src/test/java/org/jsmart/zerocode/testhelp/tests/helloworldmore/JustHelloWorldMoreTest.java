@@ -36,4 +36,10 @@ public class JustHelloWorldMoreTest {
 
     }
 
+    @Test
+    @JsonTestCase("helloworld_more/hello_world_json_tree.json")
+    public void testMoreDepthJsonBut_doesntMatter() throws Exception {
+
+    }
+
 }

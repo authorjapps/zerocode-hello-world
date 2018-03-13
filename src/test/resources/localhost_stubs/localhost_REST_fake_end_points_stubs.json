@@ -90,6 +90,57 @@
                 "status": 200,
                 "body": "I am emp No 101. Nothing more than this I can respond"
             }
+        },
+        {
+            "name": "Sample_Get_Full_Employee_by_Id",
+            "operation": "GET",
+            "url": "/api/v1/employees/emp1001",
+            "response": {
+                "status": 200,
+                "body": {
+                    "id": "emp1001",
+                    "name": "Jeff Bezos",
+                    "achievements": "Amazon",
+                    "empType": "Self Employed",
+                    "addresses": [
+                        {
+                            "type": "Office",
+                            "line1": "39 NewYork Street",
+                            "zip": "560 390"
+                        },
+                        {
+                            "type": "Home",
+                            "line1": "99 Piscataway",
+                            "zip": "560 001"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Sample_Get_Address_by_emp_id",
+            "operation": "GET",
+            "url": "/api/v1/addresses/empoyee/emp1001",
+            "response": {
+                "status": 200,
+                "body": {
+                    "empId": "emp1001",
+                    "addresses": [
+                        {
+                            "addressId": "addr-001",
+                            "type": "Office",
+                            "line1": "39 NewYork Street",
+                            "zip": "560 390"
+                        },
+                        {
+                            "addressId": "addr-002",
+                            "type": "Home",
+                            "line1": "99 Piscataway",
+                            "zip": "560 001"
+                        }
+                    ]
+                }
+            }
         }
     ]
 }
