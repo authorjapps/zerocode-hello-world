@@ -26,9 +26,11 @@ That's it. It is as simple as that.
 ---
 
 
-So when your tests grows to **thousands** in numbers, you need to organize them by feature, by consumer and/or by profile etc. Hence Zerocode helps here to maintain peace! 
+So what happens when your tests grows to **thousands** in numbers? 
+You then, need to organize them by feature, by consumer and/or by profile etc. Hence Zerocode helps here to maintain peace! 
 
-Also it **saves** you from creating thousands of java `Pojos` and getting lost in `interpreting` actual request/response.
+Also it **saves** you from creating **hundreds** of java `Pojos` with `getters/setters`, creating their **builders** and getting lost in `visualizing` or `interpreting` in mind how the actual request/response could look like.
+This hassle one has to face **everytime** you run the tests **or** encounter a test failure **or** during a bug/scenario analysis.
 
 Step-3: (Optional Step to bring up **local REST server** and fiddle with the tests)
 ```
@@ -69,4 +71,4 @@ More keys: https://www.jetbrains.com/help/idea/mastering-intellij-idea-keyboard-
 1. Open a matching java file -> Ctrl + n
 1. Open a matching JSON or XML file -> Ctrl + Shift + n
 1. To navigate to file -> Ctrl + Click
-
+1. Usage/invocation of a JSON file or Java File or Java method/variable etc -> Alt + F7
