@@ -16,12 +16,114 @@ Step-2:
 * Run the JustHelloWorldTest.java test (it invokes GitHub REST https apis and asserts the result)
 ```
           * i.e. src/test/java/org/jsmart/zerocode/testhelp/tests/helloworld/JustHelloWorldTest.java
-          * Then fiddle with the assertions section and run the test again, observe the PASS/FAILURES at the console.
+          * Then, you can fiddle with the assertions section and run the test again, 
+            observe the PASS/FAILURES at the console.
           
           * To run more tests go to individual package and run. e.g. folders-  helloworldgithub, helloworldmore etc
 ```
 Done.
-That's it. It is as simple as that.
+That's it. It is as simple as that. Sample **run log** below for reference-
+
+---
+Quick look at the test case and it's **run log** below-
+
+- JUnit Test case-
+```
+@TargetEnv("github_host.properties")
+@RunWith(ZeroCodeUnitRunner.class)
+public class JustHelloWorldTest {
+
+    @Test
+    @JsonTestCase("helloworld/hello_world_status_ok_assertions.json")
+    public void testGet() throws Exception {
+    
+    }
+
+}
+```
+
+- Test case JSON content of _"helloworld/hello_world_status_ok_assertions.json"_
+
+```
+{
+    "scenarioName": "GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body",
+    "steps": [
+        {
+            "name": "get_user_details",
+            "url": "/users/siddhagalaxy",
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body": {
+                    "login" : "siddhagalaxy",
+                    "id" : 33847730,
+                    "type" : "User",
+                    "followers_url" : "https://api.github.com/users/siddhagalaxy/followers"
+                }
+            }
+        }
+    ]
+}
+```
+
+- Output i.e. the **actual** Response and **expected** Assertions -
+```
+2018-04-10 21:47:33,748 [main] INFO o.j.z.c.r.ZeroCodeMultiStepsScenarioRunnerImpl - 
+------ BDD: Scenario:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body -----
+
+2018-04-10 21:47:34,700 [main] INFO o.j.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body->get_user_details
+
+--------- TEST-STEP-CORRELATION-ID: 0b27d9e4-d3ff-46c8-9b10-53fa0f153a33 ---------
+requestTimeStamp:2018-04-10T21:47:33.768
+step:get_user_details
+url:https://api.github.com:443/users/siddhagalaxy
+method:GET
+request:
+{ } 
+--------- TEST-STEP-CORRELATION-ID: 0b27d9e4-d3ff-46c8-9b10-53fa0f153a33 ---------
+Response:
+{
+  "status" : 200,
+  "headers" : {
+    "Server" : [ [ "GitHub.com" ] ],
+    "Content-Type" : [ [ "application/json; charset=utf-8" ] ],
+    "ETag" : [ [ "W/\"638280d346aa3b795c938e1635ac65a9\"" ] ],
+    "Cache-Control" : [ [ "public, max-age=60, s-maxage=60" ] ],
+    "X-Runtime-rack" : [ [ "0.072247" ] ],
+    "Status" : [ [ "200 OK" ] ]
+  },
+  "body" : {
+    "login" : "siddhagalaxy",
+    "id" : 33847730,
+    "avatar_url" : "https://avatars0.githubusercontent.com/u/33847730?v=4",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/siddhagalaxy",
+    "html_url" : "https://github.com/siddhagalaxy",
+    "type" : "User",
+    "created_at" : "2017-11-20T22:13:14Z",
+    "updated_at" : "2018-03-26T19:57:08Z"
+  }
+}
+*responseTimeStamp:2018-04-10T21:47:34.692 
+*Response delay:924.0 milli-secs 
+---------> Assertion: <----------
+{
+  "status" : 200,
+  "body" : {
+    "login" : "siddhagalaxy",
+    "id" : 33847730,
+    "type" : "User",
+    "followers_url" : "https://api.github.com/users/siddhagalaxy/followers"
+  }
+} 
+-done-
+
+**FINISHED executing all Steps for [GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body] **.
+Steps were:[get_user_details]
+```
 
 ---
 
