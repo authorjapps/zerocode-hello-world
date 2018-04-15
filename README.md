@@ -22,10 +22,15 @@ Step-2:
           * To run more tests go to individual package and run. e.g. folders-  helloworldgithub, helloworldmore etc
 ```
 Done.
-That's it. It is as simple as that. Sample **run log** below for reference-
+That's it. It is as simple as that. 
 
 ---
-Quick look at the test case and it's **run log** below-
+
+
+Sample **test run log** below for reference-
+
+---
+Quick look at the test case and its **run log** below-
 
 - JUnit Test case-
 ```
@@ -73,8 +78,10 @@ public class JustHelloWorldTest {
 2018-04-10 21:47:33,748 [main] INFO o.j.z.c.r.ZeroCodeMultiStepsScenarioRunnerImpl - 
 ------ BDD: Scenario:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body -----
 
-2018-04-10 21:47:34,700 [main] INFO o.j.zerocode.core.runner.StepNotificationHandler - 
-***Step PASSED:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body->get_user_details
+2018-04-10 21:47:34,700 [main] INFO org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED:
+GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body
+->get_user_details
 
 --------- TEST-STEP-CORRELATION-ID: 0b27d9e4-d3ff-46c8-9b10-53fa0f153a33 ---------
 requestTimeStamp:2018-04-10T21:47:33.768
