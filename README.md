@@ -33,7 +33,7 @@ Sample **test run log** below for reference-
 Quick look at the test case and its **run log** below-
 
 - JUnit Test case-
-```
+```java
 @TargetEnv("github_host.properties")
 @RunWith(ZeroCodeUnitRunner.class)
 public class JustHelloWorldTest {
@@ -49,7 +49,7 @@ public class JustHelloWorldTest {
 
 - Test case JSON content of _"helloworld/hello_world_status_ok_assertions.json"_
 
-```
+```javaScript
 {
     "scenarioName": "GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body",
     "steps": [
@@ -74,7 +74,7 @@ public class JustHelloWorldTest {
 ```
 
 - Output i.e. the **actual** Response and **expected** Assertions -
-```
+```json
 2018-04-10 21:47:33,748 [main] INFO o.j.z.c.r.ZeroCodeMultiStepsScenarioRunnerImpl - 
 ------ BDD: Scenario:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body -----
 
@@ -142,14 +142,14 @@ Also it **saves** you from creating **hundreds** of java `Pojos` with `getters/s
 This hassle one has to face **everytime** you run the tests **or** encounter a test failure **or** during a bug/scenario analysis.
 
 Step-3: (Optional Step to bring up **local REST server** and fiddle with the tests)
-```
+```java
 Start the Local Mock REST server
           * i.e. just Run as main() -> test/.../RunMeFirstRESTServer.java. 
           * Then you can run the src/test/java/org/jsmart/zerocode/testhelp/tests/helloworldmore/JustHelloWorldMoreTest.java
 ```
 
 Run as Suite:
-```
+```java
           * src/test/java/org/jsmart/zerocode/testhelp/tests/HelloWorldGitHubSuite.java
 
 More examples:
