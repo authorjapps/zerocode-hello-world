@@ -72,6 +72,15 @@ public class JustHelloWorldTest {
     ]
 }
 ```
+- github_host.properties contains-
+```properties
+# Web Server host and port
+restful.application.endpoint.host=https://api.github.com
+restful.application.endpoint.port=443
+
+# Web Service context; Leave it blank in case you do not have a common context
+restful.application.endpoint.context=
+```
 
 - Output i.e. the **actual** Response and **expected** Assertions -
 ```json
