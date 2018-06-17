@@ -24,12 +24,12 @@ Step-2:
 Done.
 That's it. It is as simple as that. 
 
----
+* * * * * * * * * * * *
 
+See more(optional) below what happens when test run is completed.
 
-Sample **test run log** below for reference-
+#### Sample **test run log** below for reference-
 
----
 Quick look at the test case and its **run log** below-
 
 - JUnit Test case-
