@@ -11,8 +11,14 @@ import org.junit.runner.RunWith;
 public class HelloWorldJavaMethodExecTest {
 
     @Test
-    @JsonTestCase("helloworld_more/hello_world_java_method_return_assertions.json")
-    public void testGet() throws Exception {
+    @JsonTestCase("helloworldjavaexec/hello_world_java_method_return_assertions.json")
+    public void testJavaDbExec() throws Exception {
+
+    }
+
+    @Test
+    @JsonTestCase("helloworldjavaexec/hello_world_javaexec_req_resp_as_json.json")
+    public void testJavaReqRespJson() throws Exception {
 
     }
 

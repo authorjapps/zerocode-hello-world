@@ -1,4 +1,4 @@
-package org.jsmart.zerocode.zerocodejavaexec;
+package org.jsmart.zerocode.zerocodejavaexec.pojo;
 
 import java.util.Objects;
 

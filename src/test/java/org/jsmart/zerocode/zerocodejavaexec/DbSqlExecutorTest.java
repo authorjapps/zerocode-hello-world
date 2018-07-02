@@ -2,6 +2,7 @@ package org.jsmart.zerocode.zerocodejavaexec;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.jsmart.zerocode.zerocodejavaexec.pojo.DbResult;
 import org.junit.Test;
 
 import java.util.List;
