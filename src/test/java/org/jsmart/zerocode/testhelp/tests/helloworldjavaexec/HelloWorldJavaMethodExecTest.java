@@ -22,4 +22,10 @@ public class HelloWorldJavaMethodExecTest {
 
     }
 
+    @Test
+    @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case.json")
+    public void testJavaExecReadPropertiesIntoTest() throws Exception {
+
+    }
+
 }
