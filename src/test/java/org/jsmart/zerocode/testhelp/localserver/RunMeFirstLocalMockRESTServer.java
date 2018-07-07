@@ -12,19 +12,19 @@ import org.slf4j.LoggerFactory;
  *
  */
 @ApiRepo("localhost_stubs")
-public class RunMeFirstRESTServer extends JsonBasedSimulator {
-    private static final Logger logger = LoggerFactory.getLogger(RunMeFirstRESTServer.class);
+public class RunMeFirstLocalMockRESTServer extends JsonBasedSimulator {
+    private static final Logger logger = LoggerFactory.getLogger(RunMeFirstLocalMockRESTServer.class);
 
     public static final int PORT = 9999;
 
-    public RunMeFirstRESTServer(int port) {
+    public RunMeFirstLocalMockRESTServer(int port) {
         super(port);
     }
 
     public static void main(String[] args) {
         logger.info("\n### REST Helper web-service starting...");
 
-        new RunMeFirstRESTServer(PORT).start();
+        new RunMeFirstLocalMockRESTServer(PORT).start();
 
         logger.info("\n### REST Helper web-service started.");
 

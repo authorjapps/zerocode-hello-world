@@ -153,7 +153,7 @@ This hassle one has to face **everytime** you run the tests **or** encounter a t
 Step-3: (Optional Step to bring up **local REST server** and fiddle with the tests)
 ```java
 Start the Local Mock REST server
-          * i.e. just Run as main() -> test/.../RunMeFirstRESTServer.java. 
+          * i.e. just Run as main() -> test/.../RunMeFirstLocalMockRESTServer.java. 
           * Then you can run the src/test/java/org/jsmart/zerocode/testhelp/tests/helloworldmore/JustHelloWorldMoreTest.java
 ```
 

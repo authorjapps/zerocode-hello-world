@@ -141,6 +141,20 @@
                     ]
                 }
             }
+        },
+        {
+            "name": "Mock GET employee details including DOB",
+            "operation": "GET",
+            "url": "/api/v1/google-uk/employees/UK-LON-1002",
+            "response": {
+                "status": 200,
+                "body": {
+                    "empId": "UK-LON-1002",
+                    "localtion": "UK-London",
+                    "dob": "1989-07-09"
+                }
+            }
         }
+
     ]
 }
