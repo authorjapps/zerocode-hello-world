@@ -1,6 +1,6 @@
-package org.jsmart.zerocode.javaexec;
+package org.jsmart.zerocode.zerocodejavaexec;
 
-import org.jsmart.zerocode.javaexec.pojo.DbResult;
+import org.jsmart.zerocode.zerocodejavaexec.pojo.DbResult;
 
 import java.util.ArrayList;
 import java.util.HashMap;

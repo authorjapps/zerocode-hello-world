@@ -1,6 +1,6 @@
-package org.jsmart.zerocode.javaexec;
+package org.jsmart.zerocode.zerocodejavaexec;
 
-import org.jsmart.zerocode.javaexec.pojo.Order;
+import org.jsmart.zerocode.zerocodejavaexec.pojo.Order;
 
 public class OrderCreator {
 

@@ -1,4 +1,4 @@
-package org.jsmart.zerocode.javaexec.utils;
+package org.jsmart.zerocode.zerocodejavaexec.utils;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;

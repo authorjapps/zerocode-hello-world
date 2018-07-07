@@ -3,7 +3,7 @@
     "steps": [
         {
             "name": "get_host_property",
-            "url": "org.jsmart.zerocode.javaexec.utils.PropertyUtils",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.PropertyUtils",
             "operation": "getProperty",
             "request": "restful.application.endpoint.host",
             "assertions": {
@@ -12,7 +12,7 @@
         },
         {
             "name": "get_port_property",
-            "url": "org.jsmart.zerocode.javaexec.utils.PropertyUtils",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.PropertyUtils",
             "operation": "getProperty",
             "request": "restful.application.endpoint.port",
             "assertions": {

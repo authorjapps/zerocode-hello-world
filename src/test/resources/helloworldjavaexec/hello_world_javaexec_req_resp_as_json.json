@@ -3,7 +3,7 @@
     "steps": [
         {
             "name": "execute_java_method",
-            "url": "org.jsmart.zerocode.javaexec.OrderCreator",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.OrderCreator",
             "operation": "createOrder",
             "request": {
                 "itemName" : "Mango",
