@@ -7,7 +7,7 @@
             "operation": "fetchDbCustomers",
             "request": "select id, name from customers",
             "assertions": {
-                "dbResults": [
+                "results": [
                     {
                         "id": 1,
                         "name": "Elon Musk"

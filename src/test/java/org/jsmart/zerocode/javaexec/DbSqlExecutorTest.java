@@ -1,8 +1,8 @@
-package org.jsmart.zerocode.zerocodejavaexec;
+package org.jsmart.zerocode.javaexec;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.jsmart.zerocode.zerocodejavaexec.pojo.DbResult;
+import org.jsmart.zerocode.javaexec.pojo.DbResult;
 import org.junit.Test;
 
 import java.util.List;
@@ -22,7 +22,7 @@ public class DbSqlExecutorTest {
 
         String json = objectMapper.writeValueAsString(resultMap);
 
-        assertThat(json, is("{\"dbResults\":[{\"id\":1,\"name\":\"Elon\"},{\"id\":2,\"name\":\"Jeff\"}]}"));
+        assertThat(json, is("{\"results\":[{\"id\":1,\"name\":\"Elon\"},{\"id\":2,\"name\":\"Jeff\"}]}"));
         System.out.println("json: " + json);
 
     }

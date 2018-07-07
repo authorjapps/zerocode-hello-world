@@ -1,7 +1,6 @@
-package org.jsmart.zerocode.zerocodejavaexec;
+package org.jsmart.zerocode.javaexec;
 
-import org.jsmart.zerocode.zerocodejavaexec.pojo.Order;
-import org.jsmart.zerocode.zerocodejavaexec.pojo.DbResult;
+import org.jsmart.zerocode.javaexec.pojo.DbResult;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 public class DbSqlExecutor {
+
+    public static final String RESULTS_KEY = "results";
 
     public Map<String, List<DbResult>> fetchDbCustomers(String sqlStatement){
 
@@ -32,12 +33,12 @@ public class DbSqlExecutor {
          * Hard coded values are for example understanding only.
          * In reality you get this from DB.
          */
-        List<DbResult> dbResults = new ArrayList<>();
-        dbResults.add(new DbResult(1, "Elon Musk"));
-        dbResults.add(new DbResult(2, "Jeff Bezos"));
+        List<DbResult> results = new ArrayList<>();
+        results.add(new DbResult(1, "Elon Musk"));
+        results.add(new DbResult(2, "Jeff Bezos"));
 
         Map<String, List<DbResult>> resultsMap = new HashMap<>();
-        resultsMap.put("dbResults", dbResults);
+        resultsMap.put(RESULTS_KEY, results);
 
         return resultsMap;
 

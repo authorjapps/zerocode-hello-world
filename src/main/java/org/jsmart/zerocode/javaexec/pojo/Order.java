@@ -1,4 +1,4 @@
-package org.jsmart.zerocode.zerocodejavaexec.pojo;
+package org.jsmart.zerocode.javaexec.pojo;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
