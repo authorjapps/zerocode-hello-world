@@ -1,5 +1,16 @@
 Zerocode Hello World
 ===
+#### Maven lib used-
+```xml
+<dependency>
+    <groupId>org.jsmart</groupId>
+    <artifactId>zerocode-rest-bdd</artifactId>
+    <version>1.2.x</version>
+</dependency>
+```
++ Look maven central for [latest version](http://search.maven.org/#search%7Cga%7C1%7Czerocode-rest-bdd).
+
+
 
 #### How to run the examples?
 Ans: The same and usual stuff you do everyday for any maven project.
