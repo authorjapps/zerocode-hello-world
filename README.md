@@ -1,6 +1,8 @@
 Zerocode Hello World
 ===
-#### Maven lib used-
+> The simplest and convinient way of testing your APIs
+
+#### Maven library-
 ```xml
 <dependency>
     <groupId>org.jsmart</groupId>
