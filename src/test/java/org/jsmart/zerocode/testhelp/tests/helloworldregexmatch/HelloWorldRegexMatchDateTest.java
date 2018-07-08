@@ -12,7 +12,7 @@ public class HelloWorldRegexMatchDateTest {
 
 
     @Test
-    @JsonTestCase("helloworld_regex_match_test/hello_world_matches_string_regex_test.json")
+    @JsonTestCase("helloworld_regex_match/hello_world_matches_string_regex_test.json")
     public void testRegexStringMatch() throws Exception {
 
     }
