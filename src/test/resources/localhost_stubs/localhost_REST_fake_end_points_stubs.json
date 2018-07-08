@@ -150,7 +150,7 @@
                 "status": 200,
                 "body": {
                     "empId": "UK-LON-1002",
-                    "localtion": "UK-London",
+                    "city": "UK-London",
                     "dob": "1989-07-09"
                 }
             }
