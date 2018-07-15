@@ -1,6 +1,7 @@
 Zerocode Hello World
 ===
-> The simplest and convinient way of testing your APIs
+Sample API testing code using [JUnit](https://github.com/junit-team/junit4) and [Zerocode](https://github.com/authorjapps/zerocode) test framework
+> The simple and convinient way of testing your APIs
 
 #### Maven library-
 ```xml
