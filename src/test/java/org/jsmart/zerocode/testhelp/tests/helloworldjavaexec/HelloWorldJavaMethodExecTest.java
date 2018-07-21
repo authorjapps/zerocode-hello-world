@@ -6,7 +6,7 @@ import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-@TargetEnv("github_host.properties")
+@TargetEnv("my_web_app.properties")
 @RunWith(ZeroCodeUnitRunner.class)
 public class HelloWorldJavaMethodExecTest {
 
@@ -25,6 +25,13 @@ public class HelloWorldJavaMethodExecTest {
     @Test
     @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case.json")
     public void testJavaExecReadPropertiesIntoTest() throws Exception {
+
+    }
+
+
+    @Test
+    @JsonTestCase("helloworldjavaexec/hello_world_oauth2_unique_token_header.json")
+    public void testOauth2TokenInHeader() throws Exception {
 
     }
 
