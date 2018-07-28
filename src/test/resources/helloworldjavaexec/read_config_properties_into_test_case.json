@@ -7,7 +7,7 @@
             "operation": "getProperty",
             "request": "restful.application.endpoint.host",
             "assertions": {
-                "value": "https://api.github.com"
+                "value": "http://localhost"
             }
         },
         {
@@ -16,7 +16,7 @@
             "operation": "getProperty",
             "request": "restful.application.endpoint.port",
             "assertions": {
-                "value" : 443
+                "value" : 9999
             }
         }
 

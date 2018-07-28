@@ -28,7 +28,6 @@ public class HelloWorldJavaMethodExecTest {
 
     }
 
-
     @Test
     @JsonTestCase("helloworldjavaexec/hello_world_oauth2_unique_token_header.json")
     public void testOauth2TokenInHeader() throws Exception {
