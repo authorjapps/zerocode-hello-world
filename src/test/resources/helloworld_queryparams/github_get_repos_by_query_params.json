@@ -1,0 +1,44 @@
+{
+    "scenarioName": "Git Hub GET API - Fetch by queryParams",
+    "steps": [
+        {
+            "name": "get_repos_by_query",
+            "url": "https://api.github.com/users/octocat/repos?page=1&per_page=6",
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body.SIZE": 6
+            }
+        },
+        {
+            "name": "get_repos_by_query_params",
+            "url": "https://api.github.com/users/octocat/repos",
+            "operation": "GET",
+            "request": {
+                "queryParams":{
+                    "page":1,
+                    "per_page":6
+                }
+            },
+            "assertions": {
+                "status": 200,
+                "body.SIZE": 6
+            }
+        },
+        {
+            "name": "get_all_reposs_without_query",
+            "url": "https://api.github.com/users/octocat/repos",
+            "operation": "GET",
+            "request": {
+            },
+            "assertions": {
+                "status": 200,
+                "body.SIZE": 8
+            }
+        }
+
+
+    ]
+}

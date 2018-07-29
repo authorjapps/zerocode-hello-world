@@ -5,7 +5,6 @@ import org.jsmart.zerocode.core.domain.TargetEnv;
 import org.jsmart.zerocode.core.domain.UseHttpClient;
 import org.jsmart.zerocode.core.httpclient.ssl.SslTrustHttpClient;
 import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -14,12 +13,9 @@ import org.junit.runner.RunWith;
 @RunWith(ZeroCodeUnitRunner.class)
 public class HelloWorldQueryParamsTest {
 
-
-    @Ignore("TODO- WIP")
     @Test
     @JsonTestCase("helloworld_queryparams/github_get_repos_by_query_params.json")
     public void testGetBy_queryParams() throws Exception {
-
     }
 
 }
