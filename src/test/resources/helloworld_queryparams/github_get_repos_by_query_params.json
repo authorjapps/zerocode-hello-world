@@ -1,15 +1,15 @@
 {
-    "scenarioName": "Git Hub GET API - Fetch by queryParams",
+    "scenarioName": "Git Hub GET API - Fetch by queryParams @@Ruwanka",
     "steps": [
         {
             "name": "get_repos_by_query",
-            "url": "/users/octocat/repos?page=1&per_page=6",
+            "url": "/users/octocat/repos?page=1&per_page=5",
             "operation": "GET",
             "request": {
             },
             "assertions": {
                 "status": 200,
-                "body.SIZE": 6
+                "body.SIZE": 5
             }
         },
         {

@@ -9,7 +9,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @TargetEnv("github_host.properties")
-@UseHttpClient(SslTrustHttpClient.class)
 @RunWith(ZeroCodeUnitRunner.class)
 public class HelloWorldQueryParamsTest {
 
