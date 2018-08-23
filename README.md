@@ -78,8 +78,7 @@ public class JustHelloWorldTest {
                 "body": {
                     "login" : "siddhagalaxy",
                     "id" : 33847730,
-                    "type" : "User",
-                    "followers_url" : "https://api.github.com/users/siddhagalaxy/followers"
+                    "type" : "User"
                 }
             }
         }
@@ -145,8 +144,7 @@ Response:
   "body" : {
     "login" : "siddhagalaxy",
     "id" : 33847730,
-    "type" : "User",
-    "followers_url" : "https://api.github.com/users/siddhagalaxy/followers"
+    "type" : "User"
   }
 } 
 -done-
