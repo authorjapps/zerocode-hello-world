@@ -3,15 +3,15 @@
     "steps": [
         {
             "name": "get_user_details",
-            "url": "/users/siddhagalaxy",
+            "url": "/users/octocat",
             "operation": "GET",
             "request": {
             },
             "assertions": {
                 "status": 200,
                 "body": {
-                    "login" : "siddhagalaxy",
-                    "id" : 33847730,
+                    "login" : "octocat",
+                    "id" : 583231,
                     "type" : "User"
                 }
             }
