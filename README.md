@@ -65,7 +65,7 @@ public class JustHelloWorldTest {
 
 ```javaScript
 {
-    "scenarioName": "GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body",
+    "scenarioName": "Invoke GitHub RESTful GET api and assert the response",
     "steps": [
         {
             "name": "get_user_details",
@@ -96,9 +96,9 @@ restful.application.endpoint.context=
 ```
 
 - Output i.e. the **actual** Response and **expected** Assertions -
-```json
+```java
 2018-04-10 21:47:33,748 [main] INFO o.j.z.c.r.ZeroCodeMultiStepsScenarioRunnerImpl - 
------- BDD: Scenario:GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body -----
+------ BDD: Scenario:Invoke GitHub RESTful GET api and assert the response -----
 
 2018-04-10 21:47:34,700 [main] INFO org.jsmart.zerocode.core.runner.StepNotificationHandler - 
 ***Step PASSED:
@@ -149,7 +149,7 @@ Response:
 } 
 -done-
 
-**FINISHED executing all Steps for [GIVEN- the GitHub REST end point, WHEN- I invoke GET, THEN- I will receive the 200 status with body] **.
+**FINISHED executing all Steps for [Invoke GitHub RESTful GET api and assert the response] **.
 Steps were:[get_user_details]
 ```
 
