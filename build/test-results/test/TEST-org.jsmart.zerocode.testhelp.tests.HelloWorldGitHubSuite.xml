@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-09-21T00:28:22" hostname="Umangs-MacBook-Pro.local" time="7.64">
+  <properties/>
+  <testcase name="GitHub Version-Details REST API will GET, version, server details and more @@Alex" classname="org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite" time="6.076"/>
+  <testcase name="GitHub Version-Details REST API will GET, version and server details @@Emma" classname="org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite" time="1.564"/>
+  <system-out><![CDATA[19:28:20,906 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
+19:28:20,907 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+19:28:20,907 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/Users/umangsingh/Umang-Docs/project-zerocode/zerocode-hello-world/build/resources/main/logback.xml]
+19:28:20,908 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs multiple times on the classpath.
+19:28:20,908 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/umangsingh/.gradle/caches/modules-2/files-2.1/org.jsmart/zerocode-rest-bdd/1.2.7/48765a585421e455f36db4f8a1607a76ea125bd8/zerocode-rest-bdd-1.2.7.jar!/logback.xml]
+19:28:20,908 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [file:/Users/umangsingh/Umang-Docs/project-zerocode/zerocode-hello-world/build/resources/main/logback.xml]
+19:28:20,908 |-WARN in ch.qos.logback.classic.LoggerContext[default] - Resource [logback.xml] occurs at [jar:file:/Users/umangsingh/.gradle/caches/modules-2/files-2.1/org.jsmart/micro-simulator/1.1.8/95bdadb6547b21c9822bd9b96f870628194ccebf/micro-simulator-1.1.8.jar!/logback.xml]
+19:28:21,013 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+19:28:21,157 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.FileAppender]
+19:28:21,163 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [fileAppender]
+19:28:21,204 |-INFO in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+19:28:21,301 |-INFO in ch.qos.logback.core.FileAppender[fileAppender] - File property is set to [target/logs/your_app_tests_logs.log]
+19:28:21,302 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+19:28:21,304 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [consoleAppender]
+19:28:21,313 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - This appender no longer admits a layout as a sub-component, set an encoder instead.
+19:28:21,313 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - To ensure compatibility, wrapping your layout in LayoutWrappingEncoder.
+19:28:21,313 |-WARN in ch.qos.logback.core.ConsoleAppender[consoleAppender] - See also http://logback.qos.ch/codes.html#layoutInsteadOfEncoder for details
+19:28:21,313 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to INFO
+19:28:21,313 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [fileAppender] to Logger[ROOT]
+19:28:21,314 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [consoleAppender] to Logger[ROOT]
+19:28:21,314 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+19:28:21,315 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@44317529 - Registering current configuration as safe fallback point
+
+2018-09-20 19:28:21,341 [Test worker] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite
+2018-09-20 19:28:21,833 [Test worker] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite
+2018-09-20 19:28:21,849 [Test worker] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite
+2018-09-20 19:28:22,037 [Test worker] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite
+2018-09-20 19:28:22,048 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:GitHub Version-Details REST API will GET, version, server details and more @@Alex -------------------------
+
+2018-09-20 19:28:22,049 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+### Executing Scenario -->> Count No: 0
+2018-09-20 19:28:22,051 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+### Executing Step -->> Count No: 0
+2018-09-20 19:28:22,115 [Test worker] INFO  org.jsmart.zerocode.core.httpclient.ssl.SslTrustHttpClient - ###Used SSL Enabled Http Client for http/https/TLS connections
+2018-09-20 19:28:27,986 [Test worker] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED:GitHub Version-Details REST API will GET, version, server details and more @@Alex->get_github_server_details
+2018-09-20 19:28:27,987 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 52094329-86d2-45cb-93e3-e18b92a7ace9 ---------
+*requestTimeStamp:2018-09-20T19:28:22.067935
+step:get_github_server_details
+url:https://api.github.com:443/users/albertosipov
+method:GET
+request:
+{ } 
+--------- TEST-STEP-CORRELATION-ID: 52094329-86d2-45cb-93e3-e18b92a7ace9 ---------
+Response:
+{
+  "status" : 200,
+  "headers" : {
+    "Date" : [ "Fri, 21 Sep 2018 00:28:27 GMT" ],
+    "Server" : [ "GitHub.com" ],
+    "Transfer-Encoding" : [ "chunked" ],
+    "X-RateLimit-Limit" : [ "60" ],
+    "Vary" : [ "Accept" ],
+    "X-Frame-Options" : [ "deny" ],
+    "X-RateLimit-Reset" : [ "1537491629" ],
+    "X-RateLimit-Remaining" : [ "17" ],
+    "Strict-Transport-Security" : [ "max-age=31536000; includeSubdomains; preload" ],
+    "Access-Control-Expose-Headers" : [ "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval" ],
+    "X-GitHub-Request-Id" : [ "C63E:3917:C68EC6:1C729AE:5BA43B2B" ],
+    "Access-Control-Allow-Origin" : [ "*" ],
+    "Last-Modified" : [ "Mon, 06 Aug 2018 11:07:41 GMT" ],
+    "X-GitHub-Media-Type" : [ "github.v3; format=json" ],
+    "Content-Security-Policy" : [ "default-src 'none'" ],
+    "X-Content-Type-Options" : [ "nosniff" ],
+    "X-XSS-Protection" : [ "1; mode=block" ],
+    "Referrer-Policy" : [ "origin-when-cross-origin, strict-origin-when-cross-origin" ],
+    "Content-Type" : [ "application/json; charset=utf-8" ],
+    "ETag" : [ "W/\"6e79b498fe9790074c48a54236895ba8\"" ],
+    "Cache-Control" : [ "public, max-age=60, s-maxage=60" ],
+    "X-Runtime-rack" : [ "0.035212" ],
+    "Status" : [ "200 OK" ]
+  },
+  "body" : {
+    "login" : "albertosipov",
+    "id" : 36400587,
+    "node_id" : "MDQ6VXNlcjM2NDAwNTg3",
+    "avatar_url" : "https://avatars3.githubusercontent.com/u/36400587?v=4",
+    "gravatar_id" : "",
+    "url" : "https://api.github.com/users/albertosipov",
+    "html_url" : "https://github.com/albertosipov",
+    "followers_url" : "https://api.github.com/users/albertosipov/followers",
+    "following_url" : "https://api.github.com/users/albertosipov/following{/other_user}",
+    "gists_url" : "https://api.github.com/users/albertosipov/gists{/gist_id}",
+    "starred_url" : "https://api.github.com/users/albertosipov/starred{/owner}{/repo}",
+    "subscriptions_url" : "https://api.github.com/users/albertosipov/subscriptions",
+    "organizations_url" : "https://api.github.com/users/albertosipov/orgs",
+    "repos_url" : "https://api.github.com/users/albertosipov/repos",
+    "events_url" : "https://api.github.com/users/albertosipov/events{/privacy}",
+    "received_events_url" : "https://api.github.com/users/albertosipov/received_events",
+    "type" : "User",
+    "site_admin" : false,
+    "name" : null,
+    "company" : null,
+    "blog" : "",
+    "location" : null,
+    "email" : null,
+    "hireable" : null,
+    "bio" : null,
+    "public_repos" : 3,
+    "public_gists" : 0,
+    "followers" : 0,
+    "following" : 0,
+    "created_at" : "2018-02-12T08:42:58Z",
+    "updated_at" : "2018-08-06T11:07:41Z"
+  }
+}
+*responseTimeStamp:2018-09-20T19:28:27.979098 
+*Response delay:5911.0 milli-secs 
+---------> Assertion: <----------
+{
+  "status" : 200,
+  "body" : {
+    "login" : "albertosipov",
+    "id" : 36400587
+  }
+} 
+-done-
+
+2018-09-20 19:28:28,113 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodePackageRunner - 
+PackageRunner- **FINISHED executing all Steps for [GitHub Version-Details REST API will GET, version, server details and more @@Alex] **.
+Steps were:[get_github_server_details]
+2018-09-20 19:28:28,115 [Test worker] INFO  org.jsmart.zerocode.core.utils.RunnerUtils - ### testClass : class org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite
+2018-09-20 19:28:28,128 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+-------------------------- BDD: Scenario:GitHub Version-Details REST API will GET, version and server details @@Emma -------------------------
+
+2018-09-20 19:28:28,128 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+### Executing Scenario -->> Count No: 0
+2018-09-20 19:28:28,129 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+### Executing Step -->> Count No: 0
+2018-09-20 19:28:28,130 [Test worker] INFO  org.jsmart.zerocode.core.httpclient.ssl.SslTrustHttpClient - ###Used SSL Enabled Http Client for http/https/TLS connections
+2018-09-20 19:28:29,562 [Test worker] INFO  org.jsmart.zerocode.core.runner.StepNotificationHandler - 
+***Step PASSED:GitHub Version-Details REST API will GET, version and server details @@Emma->get_github_server_details
+2018-09-20 19:28:29,562 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodeMultiStepsScenarioRunnerImpl - 
+--------- TEST-STEP-CORRELATION-ID: 38dc9f80-a58e-4056-85bd-929f6106c32c ---------
+*requestTimeStamp:2018-09-20T19:28:28.129779
+step:get_github_server_details
+url:https://api.github.com:443/users/octocat/orgs
+method:GET
+request:
+{ } 
+--------- TEST-STEP-CORRELATION-ID: 38dc9f80-a58e-4056-85bd-929f6106c32c ---------
+Response:
+{
+  "status" : 200,
+  "headers" : {
+    "Date" : [ "Fri, 21 Sep 2018 00:28:29 GMT" ],
+    "Server" : [ "GitHub.com" ],
+    "Content-Length" : [ "2" ],
+    "X-RateLimit-Limit" : [ "60" ],
+    "Vary" : [ "Accept" ],
+    "X-Frame-Options" : [ "deny" ],
+    "X-RateLimit-Reset" : [ "1537491629" ],
+    "X-RateLimit-Remaining" : [ "16" ],
+    "Strict-Transport-Security" : [ "max-age=31536000; includeSubdomains; preload" ],
+    "Access-Control-Expose-Headers" : [ "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval" ],
+    "X-GitHub-Request-Id" : [ "C63F:3916:115870B:231AA27:5BA43B2D" ],
+    "Access-Control-Allow-Origin" : [ "*" ],
+    "X-GitHub-Media-Type" : [ "github.v3; format=json" ],
+    "Content-Security-Policy" : [ "default-src 'none'" ],
+    "X-Content-Type-Options" : [ "nosniff" ],
+    "X-XSS-Protection" : [ "1; mode=block" ],
+    "Referrer-Policy" : [ "origin-when-cross-origin, strict-origin-when-cross-origin" ],
+    "Content-Type" : [ "application/json; charset=utf-8" ],
+    "ETag" : [ "\"d751713988987e9331980363e24189ce\"" ],
+    "Cache-Control" : [ "public, max-age=60, s-maxage=60" ],
+    "X-Runtime-rack" : [ "0.015326" ],
+    "Status" : [ "200 OK" ]
+  },
+  "body" : [ ]
+}
+*responseTimeStamp:2018-09-20T19:28:29.561348 
+*Response delay:1431.0 milli-secs 
+---------> Assertion: <----------
+{
+  "status" : 200
+} 
+-done-
+
+2018-09-20 19:28:29,677 [Test worker] INFO  org.jsmart.zerocode.core.runner.ZeroCodePackageRunner - 
+PackageRunner- **FINISHED executing all Steps for [GitHub Version-Details REST API will GET, version and server details @@Emma] **.
+Steps were:[get_github_server_details]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

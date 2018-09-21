@@ -1,0 +1,33 @@
+{
+    "scenarioName": "Make the host config properties available into the test case json",
+    "steps": [
+        {
+            "name": "get_host_property",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.PropertyUtils",
+            "operation": "getProperty",
+            "request": "restful.application.endpoint.host",
+            "assertions": {
+                "value": "http://localhost"
+            }
+        },
+        {
+            "name": "get_port_property",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.PropertyUtils",
+            "operation": "getProperty",
+            "request": "restful.application.endpoint.port",
+            "assertions": {
+                "value" : 9999
+            }
+        }
+
+        // -------------------------------------------------------------------------------------------------
+        // Then these values are available to you all your steps as JSON Path
+        // e.g. ${$.get_host_property.response.value} etc
+        //
+        // An example usage could be-
+        // "link" : "${$.get_host_property.response.value}:${$.get_port_property.response.value}/api/path"
+        // will resolve to the below value-
+        // "link" : "https://api.github.com:443/api/path"
+        // -------------------------------------------------------------------------------------------------
+    ]
+}
