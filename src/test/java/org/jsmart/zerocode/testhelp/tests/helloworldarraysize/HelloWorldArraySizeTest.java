@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 public class HelloWorldArraySizeTest {
 
     @Test
-    @JsonTestCase("helloworld_array_size/hello_world_array_size_assertions_test.json")
+    @JsonTestCase("helloworld_array_size/hello_world_array_n_size_assertions_test.json")
     public void testArraySize() throws Exception {
 
     }

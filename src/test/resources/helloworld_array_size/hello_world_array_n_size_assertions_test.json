@@ -1,5 +1,5 @@
 {
-    "scenarioName": "Test only size of an response array",
+    "scenarioName": "Assert array or the size in the response - so many simple ways",
     "steps": [
         {
             "name": "check_array_size_way1",
@@ -23,6 +23,31 @@
                     },
                     {
                         "id": 2,
+                        "name": "Jeff Bezos"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "check_array_size_way21",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.DbSqlExecutor",
+            "operation": "fetchDbCustomers",
+            "request": "select id, name from customers",
+            "assertions": {
+                "results[1].name": "Jeff Bezos"
+            }
+        },
+        {
+            "name": "check_array_size_way22",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.DbSqlExecutor",
+            "operation": "fetchDbCustomers",
+            "request": "select id, name from customers",
+            "assertions": {
+                "results": [
+                    {
+                        "name": "Elon Musk"
+                    },
+                    {
                         "name": "Jeff Bezos"
                     }
                 ]
