@@ -1,6 +1,10 @@
 package org.jsmart.zerocode.zerocodejavaexec;
 
+import com.google.inject.Inject;
+import com.google.inject.name.Named;
 import org.jsmart.zerocode.zerocodejavaexec.pojo.DbResult;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,6 +12,16 @@ import java.util.List;
 import java.util.Map;
 
 public class DbSqlExecutor {
+    private static final Logger LOGGER = LoggerFactory.getLogger(DbSqlExecutor.class);
+
+    @Inject(optional = true)
+    @Named("db.conn.user.name")
+    private String dbUserName;
+
+    @Inject(optional = true)
+    @Named("db.conn.password")
+    private String dbPassword;
+
 
     public static final String RESULTS_KEY = "results";
 
@@ -19,19 +33,21 @@ public class DbSqlExecutor {
     }
 
     private Map<String, List<DbResult>> executeSelectSql(String sqlStatement) {
+        LOGGER.info("\n\nDB Connection user:{}, password:{}\n\n", dbUserName, dbPassword);
+
         /**
-         * ------------------------------------------------------------------------------
+         * ----------------------------------------------------------------------------------
+         * // Your code goes here. //
          * e.g.
-         * You can use JDBC connection and fetch teh result
-         * -or-
-         * Use spring JDBC template with the data source to your DB(Oracle or MySql etc)
-         * ------------------------------------------------------------------------------
+         * - You can use JDBC-connection/spring JDBC template and fetch the results using
+         * the above 'userName and password'
+         * ----------------------------------------------------------------------------------
          */
 
         /**
-         * Suppose you finish execution and you got the list of results from DB
-         * Hard coded values are for example understanding only.
-         * In reality you get this from DB.
+         * Once you finished the DB execution and you will get the list of results from DB in
+         * the 'results' list. Values hard coded below for the example understanding only.
+         * In reality you get these results from the DB.
          */
         List<DbResult> results = new ArrayList<>();
         results.add(new DbResult(1, "Elon Musk"));
