@@ -1,3 +1,7 @@
+> This HelloWorld project can be setup via POM as well as Gradle.
+
+> For Gradle setup, please see the README-GRADLE.md file
+
 Zerocode Hello World
 ===
 Sample API testing code using [JUnit](https://github.com/junit-team/junit4) and [Zerocode](https://github.com/authorjapps/zerocode) test framework
