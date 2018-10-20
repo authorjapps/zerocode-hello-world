@@ -1,6 +1,58 @@
 {
-    "name": "Localhost REST Endpoints - Sample GET POST PUT apis",
+    "name": "Localhost mocked aka stubbed aka fake REST Endpoints - GET POST PUT apis",
     "apis": [
+        {
+            "name": "Sample_POST_Employee_Create",
+            "operation": "POST",
+            "url": "/api/v1/google-uk/employees",
+            "ignoreBody": true,
+            "response": {
+                "status": 201,
+                "body": {
+                    "id": 1000,
+                    "name": "Larry Pg",
+                    "addresses": [
+                        {
+                            "gpsLocation": "x9000-y9000z-9000-home"
+                        },
+                        {
+                            "gpsLocation": "x9000-y9000z-9000-home-off"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "sample POST with matching body",
+            "operation": "POST",
+            "url": "/api/v1/employees",
+            "ignoreBody": false,
+            "body": {
+                "name": "Emma",
+                "surName": "Norton"
+            },
+            "response": {
+                "status": 201,
+                "body": {
+                    "id": 39001,
+                    "ldapId": "emmanorton"
+                }
+            }
+        },
+        {
+            "name": "sample GET for Emma Norton",
+            "operation": "GET",
+            "url": "/api/v1/employees/39001",
+            "response": {
+                "status": 200,
+                "body": {
+                    "id": 39001,
+                    "ldapId": "emmanorton",
+                    "name": "Emma",
+                    "surName": "Norton"
+                }
+            }
+        },
         {
             "name": "Sample_Get_Employee_by_Id",
             "operation": "GET",
@@ -22,23 +74,37 @@
             }
         },
         {
-            "name": "Sample_POST_Employee_Create",
+            "name": "Screening - sample POST with matching body",
             "operation": "POST",
-            "url": "/api/v1/google-uk/employees",
-            "ignoreBody": true,
+            "url": "/api/v1/employees/screening",
+            "ignoreBody": false,
+            "body": {
+                "empId": "EMP39001",
+                "originAddress": {
+                    "addressId":"lon-hsbc-5432",
+                    "countryOfOrigin":"UK"
+                }
+            },
             "response": {
                 "status": 201,
                 "body": {
-                    "id": 1000,
-                    "name": "Larry Pg",
-                    "addresses": [
-                        {
-                            "gpsLocation": "x9000-y9000z-9000-home"
-                        },
-                        {
-                            "gpsLocation": "x9000-y9000z-9000-home-off"
-                        }
-                    ]
+                    "id": "SCRUNIQUEID5003"
+                }
+            }
+        },
+        {
+            "name": "Screening - sample GET",
+            "operation": "GET",
+            "url": "/api/v1/employees/screening/SCRUNIQUEID5003",
+            "response": {
+                "status": 200,
+                "body": {
+                    "id": "SCRUNIQUEID5003",
+                    "empId": "EMP39001",
+                    "originAddress": {
+                        "addressId":"lon-hsbc-5432",
+                        "countryOfOrigin":"UK"
+                    }
                 }
             }
         },
