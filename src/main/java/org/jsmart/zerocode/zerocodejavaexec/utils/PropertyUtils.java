@@ -12,7 +12,8 @@ public class PropertyUtils {
     private static final org.slf4j.Logger LOGGER = getLogger(PropertyUtils.class);
     public static final String PROPERTY_HOST = "restful.application.endpoint.host";
     public static final String PROPERTY_PORT = "restful.application.endpoint.port";
-    public static final String VALUE_KEY = "value";
+    public static final String ANOTHER_NEW_ENDPOINT_HOST = "another.new.endpoint.host";
+    public static final String GITHUB_HOST = "github_host";
 
     @Inject(optional = true)
     @Named(PROPERTY_HOST)
@@ -22,31 +23,27 @@ public class PropertyUtils {
     @Named(PROPERTY_PORT)
     private Integer restfulPort;
 
+    @Inject(optional = true)
+    @Named(ANOTHER_NEW_ENDPOINT_HOST)
+    private String aNewHost;
+
+    @Inject(optional = true)
+    @Named(GITHUB_HOST)
+    private String githubHost;
+
     // -----------------------------------------------------------
-    // You can @Inject any property here via
+    // You can @Inject any property from the config here via
     // @Named("property key name from config file") as shown above
     // -----------------------------------------------------------
+    public Map<String, Object> readProperties(String optionalString) {
 
-    public Map<String, Object> getProperty(String propertyKey){
+        Map<String, Object> propertiesMap = new HashMap<>();
+        propertiesMap.put(PROPERTY_HOST, restfulHost);
+        propertiesMap.put(PROPERTY_PORT, restfulPort);
+        propertiesMap.put(ANOTHER_NEW_ENDPOINT_HOST, aNewHost);
+        propertiesMap.put(GITHUB_HOST, githubHost);
 
-        switch (propertyKey) {
-            case PROPERTY_HOST:
-                LOGGER.info("key:{}, value:{} ", PROPERTY_HOST, restfulHost);
-                return outputAs(restfulHost);
-
-            case PROPERTY_PORT:
-                LOGGER.info("key:{}, value:{} ", PROPERTY_HOST, restfulHost);
-                return outputAs(restfulPort);
-
-            default:
-                return null;
-        }
-    }
-
-    private <T> Map<String, T> outputAs(T value) {
-        Map<String, T> valueMap = new HashMap<>();
-        valueMap.put(VALUE_KEY, value);
-        return valueMap;
+        return propertiesMap;
     }
 
 }
