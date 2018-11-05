@@ -33,6 +33,7 @@
 			<artifactId>zerocode-rest-bdd</artifactId>
 			<version>${zerocode-rest-bdd.version}</version>
 		</dependency>
+		<!-- The below "micro-simulator" dependency is not needed for real live projects. This is present here just to mock/stub some end points for demo purpose only -->
 		<dependency>
 			<groupId>org.jsmart</groupId>
 			<artifactId>micro-simulator</artifactId>
