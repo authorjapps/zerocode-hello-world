@@ -198,6 +198,7 @@ For quick reference only- See more eclipse keys https://www.linkedin.com/pulse/t
 1. Open a matching java file -> Ctrl + Shift + R
 1. Open a matching JSON file -> Ctrl + Shift + R
 1. To navigate to file -> Ctrl + Click
+1. Clik a JSON file and navigate to it's JUnit Test -> Alt+Cmd+G(Mac: ⌥+⌘+G), Windows(Alt+Ctrl+G)
 
 IntelliJ(General key-board shotcuts):
 =====
