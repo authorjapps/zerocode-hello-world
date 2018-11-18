@@ -7,7 +7,7 @@
             "operation": "readProperties",
             "request": "",
             "assertions": {
-                "github_host" : "https://api.github.com",
+                "new_api_host" : "https://api.github.com",
                 "['restful.application.endpoint.host']" : "http://localhost", //<--- Wrapped in braces due to dots in the key
                 "['restful.application.endpoint.port']" : 9999,
                 "['another.new.endpoint.host']" : "https://api.github.com"
@@ -29,7 +29,7 @@
         },
         {
             "name": "get_user_details_way2",
-            "url": "${$.config.response.github_host}/users/octocat",
+            "url": "${$.config.response.new_api_host}/users/octocat",
             "operation": "GET",
             "request": {
             },

@@ -23,7 +23,13 @@ public class HelloWorldJavaMethodExecTest {
     }
 
     @Test
-    @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case.json")
+    @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case_1.json")
+    public void test_aNewHostFromConfig() throws Exception {
+
+    }
+
+    @Test
+    @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case_2.json")
     public void testJavaExecReadPropertiesIntoTest() throws Exception {
 
     }
