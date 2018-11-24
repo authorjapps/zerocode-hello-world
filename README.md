@@ -1,11 +1,15 @@
-> This HelloWorld project can be setup via POM as well as Gradle.
-
-> For Gradle setup, please see the README-GRADLE.md file
-
 Zerocode Hello World
 ===
 Sample API testing code using [JUnit](https://github.com/junit-team/junit4) and [Zerocode](https://github.com/authorjapps/zerocode) test framework
 > The simple and convinient way of testing your APIs
+
+![hello_gif](https://user-images.githubusercontent.com/12598420/48679206-33616a00-eb85-11e8-9b6f-11f22c8ee813.gif)
+
+
+##### This HelloWorld project can be setup via POM as well as Gradle.
+
+_For Gradle setup, please see the [README-GRADLE.md](https://github.com/authorjapps/zerocode-hello-world/blob/master/README-GRADLE.md) file_
+
 
 #### Maven library-
 ```xml
@@ -165,6 +169,9 @@ You then, need to organize them by feature, by consumer and/or by profile etc. H
 
 Also it **saves** you from creating **hundreds** of java `Pojos` with `getters/setters`, creating their **builders** and getting lost in `visualizing` or `interpreting` in mind how the actual request/response could look like.
 This hassle one has to face **everytime** you run the tests **or** encounter a test failure **or** during a bug/scenario analysis.
+
+Running Local Mock Server(for other Hello World tests)
+===
 
 Step-3: (Optional Step to bring up **local REST server** and fiddle with the tests)
 ```java
