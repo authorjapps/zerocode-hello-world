@@ -1,5 +1,5 @@
 {
-    "scenarioName": "Java method request, response as JSON",
+    "scenarioName": "Generate new Security Token and pass as custom header",
     "steps": [
         {
             "name": "token_brewer",
