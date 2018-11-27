@@ -59,4 +59,12 @@ public class DbSqlExecutor {
         return resultsMap;
 
     }
+
+    public void setDbUserName(String dbUserName) {
+        this.dbUserName = dbUserName;
+    }
+
+    public void setDbPassword(String dbPassword) {
+        this.dbPassword = dbPassword;
+    }
 }
