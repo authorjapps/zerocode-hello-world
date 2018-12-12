@@ -1,5 +1,5 @@
 {
-    "scenarioName": "GitHub Version-Details REST API will GET, version, server details and more @@Alex",
+    "scenarioName": "GitHub GET API and more @@Alex",
     "steps": [
         {
             "name": "get_github_server_details",
