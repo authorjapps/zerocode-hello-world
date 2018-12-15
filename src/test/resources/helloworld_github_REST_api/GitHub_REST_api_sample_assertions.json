@@ -6,6 +6,9 @@
             "url": "/users/octocat/orgs",
             "operation": "GET",
             "request": {
+                "headers":{
+                    "api_key": "efg-135-xyz-9393"
+                }
             },
             "assertions": {
                 "status": 200

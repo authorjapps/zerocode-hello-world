@@ -1,7 +1,6 @@
 package org.jsmart.zerocode.zerocodejavaexec.httpclient;
 
 import org.apache.http.client.CookieStore;
-import org.apache.http.client.methods.RequestBuilder;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
 import org.apache.http.conn.ssl.SSLContextBuilder;
 import org.apache.http.impl.client.BasicCookieStore;
@@ -18,8 +17,6 @@ import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
-
-import static org.jsmart.zerocode.core.httpclient.utils.HeaderUtils.processFrameworkDefault;
 
 public class CustomHttpClient extends BasicHttpClient {
     private static final Logger LOGGER = LoggerFactory.getLogger(CustomHttpClient.class);
@@ -68,7 +65,7 @@ public class CustomHttpClient extends BasicHttpClient {
      * If not overridden, The framework will fall back to this default implementation to handle this.
      */
     @Override
-    public RequestBuilder handleHeaders(Map<String, Object> headers, RequestBuilder requestBuilder) {
+    public Map<String, Object> amendRequestHeaders(Map<String, Object> headers) {
         // ----------------------------------------------------
         // Add your custom headers here(if any).
         // e.g. Your auth tokens, client_id or client_secret etc
@@ -80,12 +77,7 @@ public class CustomHttpClient extends BasicHttpClient {
             addCustomHeaders(headers);
         }
 
-        // ---------------------------------------------------
-        // Then just delegate the headers to framework method
-        // by calling 'processFrameworkDefault' method
-        // ---------------------------------------------------
-        processFrameworkDefault(headers, requestBuilder);
-        return requestBuilder;
+        return headers;
     }
 
     private void addCustomHeaders(Map<String, Object> headers) {
