@@ -1,0 +1,18 @@
+{
+  "scenarioName": "GIVEN- the REST end point, WHEN- I invoke GET, THEN- OAuth token will be given insted of DIY and I will receive the 200 status with body",
+  "steps": [
+    {
+      "name": "get_user_details",
+      "url": "/users/octocat",
+      "operation": "GET",
+      "request": {
+        "headers": {
+          "Authorization": "DIY"
+        }
+      },
+      "assertions": {
+        "status": 200
+      }
+    }
+  ]
+}
