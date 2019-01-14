@@ -62,15 +62,31 @@ public class OAuth2Impl extends TimerTask {
 	 */
 	private synchronized void generateToken() {
 		try (CloseableHttpClient client = HttpClients.createDefault()) {
-			HttpPost post = new HttpPost(accessTokenURL);
-
-			List<NameValuePair> nameValuePairs = new ArrayList<>(4);
-			nameValuePairs.add(new BasicNameValuePair("refresh_token", refreshToken));
-			nameValuePairs.add(new BasicNameValuePair("client_secret", clientSecret));
-			nameValuePairs.add(new BasicNameValuePair("client_id", clienId));
-			nameValuePairs.add(new BasicNameValuePair("grant_type", "refresh_token"));
-			post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
+			
+			
+			StringBuilder URL = new StringBuilder(accessTokenURL);
+			URL.append('?');
+			URL.append("refresh_token=" + refreshToken);
+			URL.append("&client_id=" + clienId);;
+			URL.append("&client_secret=" + clientSecret);
+			URL.append("&grant_type=refresh_token");
+			HttpPost post = new HttpPost(URL.toString());
+			
+			
+			/*
+			 * Blow code was not compatible with simulator. In production kindly make 
+			 * use of the below code.
+			 */
+			
+			/*
+			 * List<NameValuePair> nameValuePairs = new ArrayList<>(4);
+			 * nameValuePairs.add(new BasicNameValuePair("refresh_token", refreshToken));
+			 * nameValuePairs.add(new BasicNameValuePair("client_secret", clientSecret));
+			 * nameValuePairs.add(new BasicNameValuePair("client_id", clienId));
+			 * nameValuePairs.add(new BasicNameValuePair("grant_type", "refresh_token"));
+			 * post.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			 */
+			
 			JSONObject jsonRespone = null;
 			try (CloseableHttpResponse response = client.execute(post);) {
 				try (InputStream stream = response.getEntity().getContent()) {
