@@ -74,7 +74,7 @@ public class OAuth2Impl extends TimerTask {
 			
 			
 			/*
-			 * Blow code was not compatible with simulator. In production kindly make 
+			 * Below code was not compatible with simulator. In production kindly make 
 			 * use of the below code.
 			 */
 			
