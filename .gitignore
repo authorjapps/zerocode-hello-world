@@ -29,3 +29,10 @@ hs_err_pid*
 /build
 /.gradle
 /out
+
+
+#eclipse meta files
+/.settings
+.classpath
+.project
+/bin
