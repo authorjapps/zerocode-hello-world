@@ -1,0 +1,13 @@
+#specific JDK or multiple JDK can be specified here. There is an issue with mvn surefire and openJDK8. 
+#It is better to switch to openJDK
+language: java
+
+
+#This helps to avoid downloading artefacts every time from MVN central. 
+#If you find any CI build failing due to unreflected dependency changes, kindly clear the CI cache
+cache:
+  directories:
+  - $HOME/.m2
+
+script:
+   - mvn clean verify
