@@ -1,9 +1,17 @@
 Zerocode Hello World
 ===
+
 Sample API testing code using [JUnit](https://github.com/junit-team/junit4) and [Zerocode](https://github.com/authorjapps/zerocode) test framework
 > The simple and convinient way of testing your APIs
 
 ![hello_gif](https://user-images.githubusercontent.com/12598420/48679206-33616a00-eb85-11e8-9b6f-11f22c8ee813.gif)
+
+<br/>
+
+Maven and CI 🔨
+====
+
+**Continuous Integration:** [![Build Status](https://travis-ci.com/authorjapps/zerocode-hello-world.svg?branch=master)](https://travis-ci.org/authorjapps/zerocode-hello-world) <br/>
 
 
 ##### This HelloWorld project can be setup via POM as well as Gradle.
