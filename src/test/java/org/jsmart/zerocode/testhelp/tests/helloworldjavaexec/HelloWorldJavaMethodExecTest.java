@@ -3,6 +3,7 @@ package org.jsmart.zerocode.testhelp.tests.helloworldjavaexec;
 import org.jsmart.zerocode.core.domain.JsonTestCase;
 import org.jsmart.zerocode.core.domain.TargetEnv;
 import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -21,13 +22,13 @@ public class HelloWorldJavaMethodExecTest {
     public void testJavaReqRespJson() throws Exception {
 
     }
-
+    @Ignore
     @Test
     @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case_1.json")
     public void test_aNewHostFromConfig() throws Exception {
 
     }
-
+    @Ignore
     @Test
     @JsonTestCase("helloworldjavaexec/read_config_properties_into_test_case_2.json")
     public void testJavaExecReadPropertiesIntoTest() throws Exception {
