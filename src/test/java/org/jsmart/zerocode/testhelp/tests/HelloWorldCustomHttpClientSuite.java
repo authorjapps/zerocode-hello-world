@@ -5,10 +5,8 @@ import org.jsmart.zerocode.core.domain.TestPackageRoot;
 import org.jsmart.zerocode.core.domain.UseHttpClient;
 import org.jsmart.zerocode.core.runner.ZeroCodePackageRunner;
 import org.jsmart.zerocode.zerocodejavaexec.httpclient.CustomHttpClient;
-import org.junit.Ignore;
 import org.junit.runner.RunWith;
 
-@Ignore
 @TargetEnv("github_host.properties")
 @UseHttpClient(CustomHttpClient.class)
 @RunWith(ZeroCodePackageRunner.class)

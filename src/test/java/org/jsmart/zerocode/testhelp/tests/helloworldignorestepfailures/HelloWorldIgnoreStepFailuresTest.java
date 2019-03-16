@@ -3,7 +3,6 @@ package org.jsmart.zerocode.testhelp.tests.helloworldignorestepfailures;
 import org.jsmart.zerocode.core.domain.JsonTestCase;
 import org.jsmart.zerocode.core.domain.TargetEnv;
 import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -12,7 +11,7 @@ import org.junit.runner.RunWith;
 public class HelloWorldIgnoreStepFailuresTest {
 
     // final outcome is Fail, but all steps executed
-	@Ignore
+    // This is knowlingly done to prove the "ignoreStepFailures"
     @Test
     @JsonTestCase("helloworld_ignore_step_failures/ignore_step_failures_exec_all.json")
     public void testMultiStepIgnoreStepFailures_execAll() throws Exception {

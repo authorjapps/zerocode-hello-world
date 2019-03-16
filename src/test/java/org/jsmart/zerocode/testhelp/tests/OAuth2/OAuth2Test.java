@@ -12,7 +12,9 @@ import org.junit.runner.RunWith;
 @RunWith(ZeroCodeUnitRunner.class)
 @UseHttpClient(OAuth2HttpClient.class)
 public class OAuth2Test {
-	
+
+	// First run this Server for OAuth2 accounts_url be available
+	// --> RunMeFirstLocalMockRESTServer main()
 	@Test
 	@JsonTestCase("helloworld_OAuth2/OAuth_supported _request.json")
 	public void injectOAuth() {
