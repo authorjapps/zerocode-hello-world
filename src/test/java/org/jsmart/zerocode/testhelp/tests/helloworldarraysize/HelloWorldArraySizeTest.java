@@ -6,7 +6,7 @@ import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-@TargetEnv("github_host.properties")
+@TargetEnv("hello_world_host.properties")
 @RunWith(ZeroCodeUnitRunner.class)
 public class HelloWorldArraySizeTest {
 
