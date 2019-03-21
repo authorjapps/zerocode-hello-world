@@ -113,9 +113,8 @@
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.restendpoint.TestGitGubEndPoint</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldCustomHttpClientSuite</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldproperties.HelloWorldPropertiesReadingTest</exclude>
-						<exclude></exclude>
-						<exclude></exclude>
-						<exclude></exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite</exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldCustomHttpClientSuite</exclude>
 					</excludes>
 					<includes>
 						<include>**/*.java</include>

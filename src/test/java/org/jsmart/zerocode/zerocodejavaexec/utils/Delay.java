@@ -1,9 +1,5 @@
 package org.jsmart.zerocode.zerocodejavaexec.utils;
 
-import org.jsmart.zerocode.zerocodejavaexec.DbSqlExecutor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class Delay {
 
     public void milliSeconds(int milliSec) throws InterruptedException {
