@@ -1,0 +1,26 @@
+{
+    "scenarioName": "Give some time delay between steps",
+    "steps": [
+        {
+            "name": "delay_seconds",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.Delay",
+            "operation": "seconds",
+            "request": 5,
+            "assertions": {
+            }
+        }
+
+        /* The below is for delay in minutes */
+
+        /*
+        {
+            "name": "delay_minutes",
+            "url": "org.jsmart.zerocode.zerocodejavaexec.utils.Delay",
+            "operation": "minutes",
+            "request": 1,
+            "assertions": {
+            }
+        }
+        */
+    ]
+}
