@@ -1,4 +1,4 @@
-package org.jsmart.zerocode.junit5;
+package org.jsmart.zerocode.testhelp.tests.junit5;
 
 public class Calculator {
 
