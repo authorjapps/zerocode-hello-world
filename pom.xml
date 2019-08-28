@@ -133,6 +133,8 @@
 						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldSelectedCherryPickedTestSuite</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.LoadGetEndPointTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.restendpoint.TestGitGubEndPoint</exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldparameterizedcsv.HelloWorldParameterizedCsvTest</exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldtypecast.HelloWorldTypeCastTest</exclude>
 					</excludes>
 					<includes>
 						<include>**/*.java</include>
