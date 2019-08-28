@@ -130,6 +130,7 @@
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldproperties.HelloWorldPropertiesReadingTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldGitHubSuite</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldCustomHttpClientSuite</exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.HelloWorldSelectedCherryPickedTestSuite</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.LoadGetEndPointTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.restendpoint.TestGitGubEndPoint</exclude>
 					</excludes>
