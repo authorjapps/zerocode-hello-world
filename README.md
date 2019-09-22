@@ -23,11 +23,11 @@ _For Gradle setup, please see the [README-GRADLE.md](https://github.com/authorja
 ```xml
 <dependency>
     <groupId>org.jsmart</groupId>
-    <artifactId>zerocode-rest-bdd</artifactId>
-    <version>1.2.x</version>
+    <artifactId>zerocode-tdd</artifactId>
+    <version>1.3.x</version>
 </dependency>
 ```
-+ Look maven central for [latest version](http://search.maven.org/#search%7Cga%7C1%7Czerocode-rest-bdd).
++ Look maven central for [latest version](https://search.maven.org/search?q=a:zerocode-tdd).
 
 
 
@@ -46,7 +46,7 @@ Step-2:
 * Run the JustHelloWorldTest.java test (it invokes GitHub REST https apis and asserts the result)
 ```
           * i.e. src/test/java/org/jsmart/zerocode/testhelp/tests/helloworld/JustHelloWorldTest.java
-          * Then, you can fiddle with the assertions section and run the test again, 
+          * Then, you can fiddle with the assertions/verify section and run the test again, 
             observe the PASS/FAILURES at the console.
           
           * To run more tests go to individual package and run. e.g. folders-  helloworldgithub, helloworldmore etc
@@ -86,10 +86,10 @@ public class JustHelloWorldTest {
         {
             "name": "get_user_details",
             "url": "/users/siddhagalaxy",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "login" : "siddhagalaxy",
@@ -111,7 +111,7 @@ restful.application.endpoint.port=443
 restful.application.endpoint.context=
 ```
 
-- Output i.e. the **actual** Response and **expected** Assertions -
+- Output i.e. the **actual** Response and **expected** Response -
 ```java
 2018-04-10 21:47:33,748 [main] INFO o.j.z.c.r.ZeroCodeMultiStepsScenarioRunnerImpl - 
 ------ BDD: Scenario:Invoke GitHub RESTful GET api and assert the response -----

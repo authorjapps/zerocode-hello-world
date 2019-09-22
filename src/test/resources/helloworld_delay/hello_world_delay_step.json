@@ -4,9 +4,9 @@
         {
             "name": "delay_seconds",
             "url": "org.jsmart.zerocode.zerocodejavaexec.utils.Delay",
-            "operation": "seconds",
+            "method": "seconds",
             "request": 5,
-            "assertions": {
+            "verify": {
             }
         }
 
@@ -16,9 +16,9 @@
         {
             "name": "delay_minutes",
             "url": "org.jsmart.zerocode.zerocodejavaexec.utils.Delay",
-            "operation": "minutes",
+            "method": "minutes",
             "request": 1,
-            "assertions": {
+            "verify": {
             }
         }
         */

@@ -4,21 +4,21 @@
         {
             "name": "create_emp",
             "url": "/api/v1/employees",
-            "operation": "POST",
+            "method": "POST",
             "request": {
                 "body" : "${JSON.FILE:reusable_content/request/request_body.json}"
             },
-            "assertions": {
+            "verify": {
                 "status": 201
             }
         },
         {
             "name": "get_user_details",
             "url": "/api/v1/employees/${$.create_emp.response.body.id}",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "id": 39001,

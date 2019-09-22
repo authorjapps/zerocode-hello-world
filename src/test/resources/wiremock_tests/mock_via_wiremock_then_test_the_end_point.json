@@ -4,7 +4,7 @@
         {
             "name": "setup_mocks",
             "url": "/$MOCK",
-            "operation": "$USE.WIREMOCK",
+            "method": "$USE.WIREMOCK",
             "request": {
                 "mocks": [
                     {
@@ -43,7 +43,7 @@
                     }
                 ]
             },
-            "assertions": {
+            "verify": {
                 "status": 200
             }
         },
@@ -53,24 +53,24 @@
         {
             "name": "actual_test_verify_get_customer",
             "url": "/api/v1/amazon/customers/UK001",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200
             }
         },
         {
             "name": "verify_get_customer_with_headers",
             "url": "/api/v1/amazon/customers/cust-007",
-            "operation": "GET",
+            "method": "GET",
             "request": {
                 "headers": {
                     "api_key": "key-01-01", //<--- Please try with a wrong key. The test should fail.
                     "api_secret": "secret-01-01"
                 }
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "id": "cust-007",
@@ -81,14 +81,14 @@
         {
             "name": "verify_get_customer_without_headers",
             "url": "/api/v1/amazon/customers/cust-007",
-            "operation": "GET",
+            "method": "GET",
             "request": {
                 "headers": {
                     //"api_key": "key-01-01", //<--- Please do not put a header, you should get 404.
                     "api_secret": "secret-01-01"
                 }
             },
-            "assertions": {
+            "verify": {
                 "status" : 404,
                 "rawBody" : "$CONTAINS.STRING:Request was not matched"
             }

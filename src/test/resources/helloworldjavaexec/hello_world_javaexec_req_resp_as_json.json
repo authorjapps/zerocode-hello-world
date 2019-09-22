@@ -4,12 +4,12 @@
         {
             "name": "execute_java_method",
             "url": "org.jsmart.zerocode.zerocodejavaexec.OrderCreator",
-            "operation": "createOrder",
+            "method": "createOrder",
             "request": {
                 "itemName" : "Mango",
                 "quantity" : 15000
             },
-            "assertions": {
+            "verify": {
                 "orderId" : 1020301,
                 "itemName" : "Mango",
                 "quantity" : 15000

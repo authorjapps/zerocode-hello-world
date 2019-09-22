@@ -4,9 +4,9 @@
         {
             "name": "config",
             "url": "org.jsmart.zerocode.zerocodejavaexec.utils.PropertyUtils",
-            "operation": "readProperties",
+            "method": "readProperties",
             "request": "",
-            "assertions": {
+            "verify": {
                 "new_api_host" : "https://api.github.com",
                 "['restful.application.endpoint.host']" : "http://localhost", //<--- Wrapped in braces due to dots in the key
                 "['restful.application.endpoint.port']" : 9999,
@@ -16,10 +16,10 @@
         {
             "name": "get_user_details",
             "url": "${$.config.response['another.new.endpoint.host']}/users/octocat",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "login" : "octocat",
@@ -30,10 +30,10 @@
         {
             "name": "get_user_details_way2",
             "url": "${$.config.response.new_api_host}/users/octocat",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "login" : "octocat",

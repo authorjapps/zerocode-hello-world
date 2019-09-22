@@ -4,13 +4,13 @@
         {
             "name": "get_github_server_details",
             "url": "/users/octocat/orgs",
-            "operation": "GET",
+            "method": "GET",
             "request": {
                 "headers":{
                     "api_key": "efg-135-xyz-9393"
                 }
             },
-            "assertions": {
+            "verify": {
                 "status": 200
             }
         }

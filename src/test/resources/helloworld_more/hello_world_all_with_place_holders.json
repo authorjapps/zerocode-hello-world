@@ -4,7 +4,7 @@
         {
             "name": "create_emp",
             "url": "/api/v1/google-uk/employees",
-            "operation": "POST",
+            "method": "POST",
             "request": {
                 "body": {
                     "id": 1000,
@@ -19,17 +19,17 @@
                     ]
                 }
             },
-            "assertions": {
+            "verify": {
                 "status": 201
             }
         },
         {
             "name": "get_user_details",
             "url": "/api/v1/google-uk/employees/${$.create_emp.response.body.id}",
-            "operation": "GET",
+            "method": "GET",
             "request": {
             },
-            "assertions": {
+            "verify": {
                 "status": 200,
                 "body": {
                     "id": "$EQ.${$.create_emp.response.body.id}", // ID is an Integer, "$EQ." is needed to avoid String comparison

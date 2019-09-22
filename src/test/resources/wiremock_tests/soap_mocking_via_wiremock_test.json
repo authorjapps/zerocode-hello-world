@@ -4,7 +4,7 @@
         {
             "name": "setup_mocks",
             "url": "/$MOCK",
-            "operation": "$USE.WIREMOCK",
+            "method": "$USE.WIREMOCK",
             "request": {
                 "mocks": [
                     {
@@ -21,7 +21,7 @@
                     }
                 ]
             },
-            "assertions": {
+            "verify": {
                 "status": 200
             }
         },
@@ -31,7 +31,7 @@
         {
             "name": "invoke_currency_conversion",
             "url": "/soap/CurrencyConvertor",
-            "operation": "POST",
+            "method": "POST",
             "request": {
                 "headers": {
                     "Content-Type": "text/xml; charset=utf-8",
@@ -40,7 +40,7 @@
                 },
                 "body": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap:Body>\n    <ConversionRate xmlns=\"http://www.webserviceX.NET/\">\n      <FromCurrency>AFA</FromCurrency>\n      <ToCurrency>GBP</ToCurrency>\n    </ConversionRate>\n  </soap:Body>\n</soap:Envelope>"
             },
-            "assertions": {
+            "verify": {
                 "status": 200
                 //"rawBody": "$CONTAINS.STRING:<ConversionRateResult>-1</ConversionRateResult>"
             }
