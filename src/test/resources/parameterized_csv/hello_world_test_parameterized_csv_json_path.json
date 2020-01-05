@@ -1,0 +1,39 @@
+{
+    "scenarioName": "Fetch and assert via parameterized JSON path",
+    "steps": [
+        {
+            "name": "get_user_details1",
+            "url": "/users/${0}",
+            "method": "GET",
+            "request": {
+            },
+            "verify": {
+                "status": 200,
+                "body": {
+                    "login" : "${0}",
+                    "name" : "${1}"
+                }
+            }
+        },
+        {
+            "name": "get_user_details2",
+            "url": "/users/${0}",
+            "method": "GET",
+            "request": {
+            },
+            "verify": {
+                "status": "(int)${4}",
+                "body": {
+                    "login" : "${0}",
+                    "name" : "${1}"
+                }
+            }
+        }
+    ],
+    "parameterized": {
+        "csvSource":[
+            "octocat, The Octocat, San Francisco, 583231, 200",
+            "siddhagalaxy, Sidd, UK, 33847730, '${$.get_user_details1.response.status}'"
+        ]
+    }
+}

@@ -116,7 +116,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<!-- Online Internet based tests are not reliable. Hence excluded -->
+					<!-- Online Internet based tests are not reliable during CI build. Hence excluded -->
 					<excludes>
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworld.JustHelloWorldTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldcustomclient.GitHubSecurityHeaderTokenTest</exclude>
@@ -134,6 +134,7 @@
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.LoadGetEndPointTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.loadtesting.restendpoint.TestGitGubEndPoint</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldparameterizedcsv.HelloWorldParameterizedCsvTest</exclude>
+						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldparameterizedcsv.HelloWorldParameterizedCsvJsonPathTest</exclude>
 						<exclude>org.jsmart.zerocode.testhelp.tests.helloworldtypecast.HelloWorldTypeCastTest</exclude>
 					</excludes>
 					<includes>
