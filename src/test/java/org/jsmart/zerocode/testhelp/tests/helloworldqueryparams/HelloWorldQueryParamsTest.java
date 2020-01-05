@@ -1,6 +1,6 @@
 package org.jsmart.zerocode.testhelp.tests.helloworldqueryparams;
 
-import org.jsmart.zerocode.core.domain.JsonTestCase;
+import org.jsmart.zerocode.core.domain.Scenario;
 import org.jsmart.zerocode.core.domain.TargetEnv;
 import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
 public class HelloWorldQueryParamsTest {
 
     @Test
-    @JsonTestCase("helloworld_queryparams/github_get_repos_by_query_params.json")
+    @Scenario("helloworld_queryparams/github_get_repos_by_query_params.json")
     public void testGetBy_queryParams() throws Exception {
     }
 

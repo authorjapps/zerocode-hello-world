@@ -1,6 +1,6 @@
 package org.jsmart.zerocode.testhelp.tests.OAuth2;
 
-import org.jsmart.zerocode.core.domain.JsonTestCase;
+import org.jsmart.zerocode.core.domain.Scenario;
 import org.jsmart.zerocode.core.domain.TargetEnv;
 import org.jsmart.zerocode.core.domain.UseHttpClient;
 import org.jsmart.zerocode.core.runner.ZeroCodeUnitRunner;
@@ -16,7 +16,7 @@ public class OAuth2Test {
 	// First run this Server for OAuth2 accounts_url be available
 	// --> RunMeFirstLocalMockRESTServer main()
 	@Test
-	@JsonTestCase("helloworld_OAuth2/OAuth_supported _request.json")
+	@Scenario("helloworld_OAuth2/OAuth_supported _request.json")
 	public void injectOAuth() {
 		
 	}
