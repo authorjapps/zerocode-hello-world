@@ -1,0 +1,88 @@
+{
+  "scenarioName": "random_number_test",
+  "steps": [
+    {
+      "name": "random_number",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title1",
+              "body": "${RANDOM.NUMBER}",
+              "userId": "${RANDOM.NUMBER}"
+            },
+            {
+              "title": "title2",
+              "body": "${RANDOM.NUMBER}",
+              "userId": "${RANDOM.NUMBER}"
+            }
+          ]
+        }
+      },
+
+      "assertions": {
+        "status": 201
+
+      }
+    },
+    {
+      "name": "random_number_fixed",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title3",
+              "body": "${RANDOM.NUMBER.FIXED}",
+              "userId": "${RANDOM.NUMBER.FIXED}"
+            },
+            {
+              "title": "title4",
+              "body": "${RANDOM.NUMBER.FIXED}",
+              "userId": "${RANDOM.NUMBER.FIXED}"
+            }
+          ]
+        }
+      },
+      "assertions": {
+        "status": 201
+      }
+    },
+    {
+      "name": "random_number_fixed_length",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title5",
+              "body": "${RANDOM.NUMBER:10}",
+              "userId": "${RANDOM.NUMBER:10}"
+            },
+            {
+              "title": "title6",
+              "body": "${RANDOM.NUMBER:10}",
+              "userId": "${RANDOM.NUMBER:10}"
+            }
+          ]
+        }
+      },
+      "assertions": {
+        "status": 201
+      }
+    }
+  ]
+}
