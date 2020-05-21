@@ -1,0 +1,88 @@
+{
+  "scenarioName": "uuid_test",
+  "steps": [
+    {
+      "name": "uuid",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title1",
+              "body": "${RANDOM.UUID}",
+              "userId": "${RANDOM.UUID}"
+            },
+            {
+              "title": "title2",
+              "body": "${RANDOM.UUID}",
+              "userId": "${RANDOM.UUID}"
+            }
+          ]
+        }
+      },
+
+      "assertions": {
+        "status": 201
+
+      }
+    },
+    {
+      "name": "uuid_fixed",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title3",
+              "body": "${RANDOM.UUID.FIXED}",
+              "userId": "${RANDOM.UUID.FIXED}"
+            },
+            {
+              "title": "title4",
+              "body": "${RANDOM.UUID.FIXED}",
+              "userId": "${RANDOM.UUID.FIXED}"
+            }
+          ]
+        }
+      },
+      "assertions": {
+        "status": 201
+      }
+    },
+    {
+      "name": "uuid_fixed_length",
+      "url": "/posts",
+      "operation": "POST",
+      "request": {
+        "headers": {
+          "Content-Type": "application/json;charset=UTF-8"
+        },
+        "body": {
+          "posts": [
+            {
+              "title": "title5",
+              "body": "${RANDOM.UUID:10}",
+              "userId": "${RANDOM.UUID:10}"
+            },
+            {
+              "title": "title6",
+              "body": "${RANDOM.UUID:10}",
+              "userId": "${RANDOM.UUID:10}"
+            }
+          ]
+        }
+      },
+      "assertions": {
+        "status": 201
+      }
+    }
+  ]
+}
