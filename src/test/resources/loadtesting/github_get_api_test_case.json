@@ -12,10 +12,10 @@
                 "body": {
                     "login" : "octocat",
                     "id" : 583231,
-                    "avatar_url" : "https://avatars3.githubusercontent.com/u/583231?v=4",
+                    "avatar_url" : "https://avatars.githubusercontent.com/u/583231?v=4",
                     "type" : "User",
                     "name" : "The Octocat",
-                    "company" : "GitHub"
+                    "company" : "@github"
                 }
             }
         }
