@@ -2,7 +2,7 @@ package org.jsmart.zerocode.zerocodejavaexec.httpclient;
 
 import org.apache.http.client.CookieStore;
 import org.apache.http.conn.ssl.NoopHostnameVerifier;
-import org.apache.http.conn.ssl.SSLContextBuilder;
+import org.apache.http.ssl.SSLContextBuilder;
 import org.apache.http.impl.client.BasicCookieStore;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
@@ -41,7 +41,7 @@ public class CustomHttpClient extends BasicHttpClient {
      * e.g. HttpClients.createDefault() provided by Apache lib.
      *
      * Note:
-     * If you do not override this method, the framework anyways creates a http client suitable for both http/https.
+     * If you do not override this method, the framework anyway creates a http client suitable for both http/https.
      */
     @Override
     public CloseableHttpClient createHttpClient() throws NoSuchAlgorithmException, KeyManagementException, KeyStoreException {
@@ -61,7 +61,7 @@ public class CustomHttpClient extends BasicHttpClient {
 
     /**
      * Overridden this method in case you want to handle the headers differently which were passed
-     * from the test-case requests or you need to add any custom headers etc.
+     * from the test-case requests, or you need to add any custom headers etc.
      * If not overridden, The framework will fall back to this default implementation to handle this.
      */
     @Override
