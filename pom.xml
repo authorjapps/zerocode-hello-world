@@ -30,6 +30,13 @@
 			<artifactId>zerocode-tdd</artifactId>
 			<version>${zerocode-tdd.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.34</version>
+			<scope>provided</scope>
+		</dependency>
 		<!--
 		The below "micro-simulator" dependency is not needed for real projects.
 		This is present here just to mock/stub some end points for demo purpose only.
